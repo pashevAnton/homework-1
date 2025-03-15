@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('./fonts/RFDewiExpanded-Ultrabold.eot');
+    src: local('RF Dewi Expanded Ultrabold'), local('RFDewiExpanded-Ultrabold'),
+        url('./fonts/RFDewiExpanded-Ultrabold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/RFDewiExpanded-Ultrabold.woff2') format('woff2'),
+        url('./fonts/RFDewiExpanded-Ultrabold.woff') format('woff'),
+        url('./fonts/RFDewiExpanded-Ultrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Extended';
+    src: url('./fonts/RFDewiExtended-Regular.eot');
+    src: local('RF Dewi Extended Regular'), local('RFDewiExtended-Regular'),
+        url('./fonts/RFDewiExtended-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/RFDewiExtended-Regular.woff2') format('woff2'),
+        url('./fonts/RFDewiExtended-Regular.woff') format('woff'),
+        url('./fonts/RFDewiExtended-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RF Dewi Expanded';
+    src: url('./fonts/RFDewiExpanded-Regular.eot');
+    src: local('RF Dewi Expanded Regular'), local('RFDewiExpanded-Regular'),
+        url('./fonts/RFDewiExpanded-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/RFDewiExpanded-Regular.woff2') format('woff2'),
+        url('./fonts/RFDewiExpanded-Regular.woff') format('woff'),
+        url('./fonts/RFDewiExpanded-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  button {
+      outline: none;
+      border: none;
+  }
+  
+  body {
+    font-family: "RF Dewi Expanded", sans-serif;
+    background-color: #fff;
+    color: #000;
+    font-style: normal;
+  }
+  
+  .container {
+    max-width: 1129px;
+    margin: 0 auto;
+  }
+  
+  .main-wrapper {
+    height: 677px;
+    background-image: url("./img/background-header.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+  }
+  
+  .wrapper-up {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .wrapper-down {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .wrapper-down > h1 {
+      font-weight: 800;
+      font-size: 60px;
+      line-height: 72px;
+      text-align: center;
+      color: #fff;
+  }
+  
+  .wrapper-down > button {
+      margin-top: 62px;
+      width: 265px;
+      height: 64px;
+      border-radius: 10px;
+      background-color: #F4DF74;
+      outline: none;
+      border: none;
+      cursor: pointer;
+  }
+  
+  .wrapper-down > button:hover {
+      background-color: #F4DF54;
+      transition: background-color .3s ease;    
+      > span {
+          transition: color .3s ease;; 
+          color: #353510;
+      }
+  }
+  
+  .wrapper-down > button > span {
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 19.2px;
+      padding: 22px 35px;
+      color: #353535;
+  }
+  
+  .wrapper_info {
+    color: #fff;
+  }
+  
+  .wrapper_info > h5 {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  
+  .wrapper_info > span {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  
+  .wrapper_info:nth-child(2) > h5 {
+    padding-top: 2px;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  
+  .wrapper_info:nth-child(2) > span {
+    display: block;
+    font-family: "RF Dewi";
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  
+  .wrapper-down {
+      margin-top: 133px;
+  }
+  
+  .wrapper-text {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrapper-text > h2 {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 52.8px;
+  }
+  
+  .wrapper-text > h2 > span {
+    display: block;
+    text-align: center;
+  }
+  
+  .wrapper-text > p {
+    display: block;
+    width: 738px;
+    margin-top: 53px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .products {
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 35px;
+    margin-bottom: 68px;
+  }
+  
+  .product {
+  
+  }
+  
+  .product__description {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 38px;
+  }
+  
+  .product > img {
+    width: 352px;
+    height: 348px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
+  .product_name {
+    font-family: 'RF Dewi', sans-serif;
+    font-size: 24px;
+    line-height: 28.8px;
+    margin-right: 15px;
+  }
+  
+  .price {
+    font-family: 'RF Dewi', sans-serif;
+    font-size: 18px;
+    line-height: 21.6px;
+    padding-bottom: 15px;
+  }
+  
+  .wrapper-video {
+    width: 1125px;
+    height: 350px;
+    position: relative;
+    background-image: url("./img/promo-video.jpeg");
+    background-size: 175%;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    z-index: 2;
+  }
+  
+  .wrapper-video__text {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 37px;
+    color: #fff;
+  }
+  
+  .wrapper-video__text > span {
+    display: block;
+    text-align: center; 
+  }
+  
+  .play-button {
+    width: 105px;
+    height: 105px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .triangle {
+    border-left: 31px solid #fff;
+    border-top: 17px solid transparent;
+    border-bottom: 17px solid transparent;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+  
+  .background-grey {
+    background-color: #eeeeee;
+    position: relative;
+    bottom: 175px;
+    padding-top: 252px;
+  }
+  
+  #developing > .container > .wrapper-text {
+    margin-top: 0px;
+  }
+  
+  .developing-clothes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    padding-bottom: 131px;
+  }
+  
+  .services {
+    display: flex;
+    column-gap: 34px;
+    padding-bottom: 30px;
+  }
+  
+  .service {
+    width: 350px;
+  }
+  
+  .service > img {
+    width: 351px;
+    height: 211px;
+    border-radius: 6px;
+    margin-bottom: 34px;
+  }
+  
+  .service__description {
+  
+  }
+  
+  .service__description > h4 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .service__description > h4 > span {
+    display: block;
+    text-align: center;
+  }
+  
+  .service__description > p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  #developing {
+    position: relative;
+    bottom: 77px
+  }
+  
+  .developing-services {
+    display: flex;
+    flex-direction: row;
+    column-gap: 37px;
+  }
+  
+  .developing-service {
+    margin-top: 80px;
+  }
+  
+  .developing-service > img {
+    width: 545px;
+    height: 316px;
+    border-radius: 6px;
+    margin-bottom: 34px;
+  }
+  
+  .developing-service__description {
+  
+  }
+  
+  .developing-service__description > h4 {
+    font-size: 20px;
+    margin-bottom: 23px;
+  }
+  
+  .developing-service__description > h4 > span {
+    display: block;
+    text-align: center;
+  }
+  
+  .developing-service__description > p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .collage {
+    position: relative;
+    margin-top: 136px;
+  }
+  
+  .collage-text {
+    width: 738px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .collage-images {
+    display: flex;
+    border-radius: 15px;
+    background-color: #000;  
+    position: relative;
+  }
+  
+  .collage-images > .collage-image:nth-child(1) {
+    width: 550px;
+    height: 350px;
+    border-radius: 15px;
+    background-image: url('./img/collage-image-1.jpeg');
+    background-size: 100%;
+    background-position: center;
+  }
+  
+  .collage-images > .collage-image:nth-child(2) {
+    width: 550px;
+    height: 350px;
+    border-radius: 15px;
+    background-image: url('./img/collage-image-2.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .collage-images::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    z-index: 1;
+  }
+  
+  
+  .collage-text > h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  
+  .collage-text > h3 > span {
+    display: block;
+    text-align: center;
+  }
+  
+  .collage-text > p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;  
+  }
+  
+  .collage-text > p >span {
+    display: block;
+    text-align: center;
+  }
+  
+  .bg-black {
+    background-color: #191919;
+    position: relative;
+    bottom: 240px;
+    z-index: -1;
+  }
+  
+  .wrapper-schema-text {
+    padding-top: 298px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .wrapper-schema-text > h3 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  
+  .wrapper-schema-text > p {
+    font-family: 'Inter', 'sans-serif';
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 107px;
+    color: #fff;
+    width: 650px;
+    text-align: center;
+  }
+  
+  .wrapper-schema-items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 20px;
+    padding-bottom: 174px;
+  }
+  
+  .schema-item {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .schema-picture {
+    border-radius: 50%;
+    background-color: #222222;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 42px;
+  }
+  
+  .schema-description {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .wrapper-production-text {
+    position: relative;
+    bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .wrapper-production-text > h2 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 73px;
+  }
+  
+  .wrapper-production-text > p {
+    font-family: 'Inter', 'sans-serif';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 738px;
+  }
+  
+  .production {
+  
+  }
+  
+  .production-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    margin-bottom: 341px;
+  }
+  
+  .production-images > img {
+    width: 351px;
+    height: 351px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  #collaborations {
+    background-color: #191919;
+    position: relative;
+  }
+  
+  .collage-2 {
+    background-color: #e6e6e6;
+    border-radius: 15px;
+    position: absolute;
+    top: -211px;
+  }
+  
+  .collage-2-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .collage-2-text > h2 {
+    padding-top: 85px;
+    font-size: 48px;
+    margin-bottom: 35px;
+    width: 821px;
+    text-align: center;
+  }
+  
+  .collage-2-text > p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    width: 575px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .collage-2-items {
+    display: flex;
+  }
+  
+  .collage-2-item {
+    width: 570px;
+    height: 472px;
+    position: relative;
+  }
+  
+  .collage-2-item:nth-child(1) {
+    background-image: url("./img/collage-2\(1\).jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+  }
+  
+  .collage-2-item:nth-child(2) {
+    background-image: url("./img/collage-2\(2\).jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+  }
+  
+  .collage-2-item > h4 {
+    font-size: 24px;
+    color: #fff;
+    width: 390px;
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+  }
+  
+  .collaborations-wrapper-text {
+    padding-top: 764px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .collaborations-wrapper-text > h2 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  
+  .collaborations-wrapper-text > p {
+    font-family: 'Inter', 'sans-serif';
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 125px;
+  }
+  
+  .collaborations-wrapper-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+  }
+  
+  .collaborations-wrapper-images > img {
+    width: 351px;
+    height: 351px;
+    border-radius: 4px;
+  }
+  
+  .special-collaboration {
+    position: relative;
+  }
+  
+  .special-collaboration > img {
+    width: 351px;
+    height: 351px;
+    border-radius: 4px;
+  }
+  
+  .special-collaboration > h4 {
+    font-size: 35px;
+    position: absolute;
+    top: 43%;
+    right: 39%;
+    color: #fff;
+  }
+  
+  .line {
+    background: #2c2c2c;
+    height: 1px;
+    margin-top: 80px;
+  }
+  
+  #collaborations > .container > .wrapper-up {
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 60px;
+  }
+  
+  #collaborations > .container > .wrapper-up > .wrapper_info:nth-child(2) {
+    padding-left: 77px;
+  }
+  
+  #collaborations > .container > .wrapper-up > .wrapper_info:nth-child(2) > h5 {
+    padding-top: 0;
+  }
+  
+  #collaborations > .container > .wrapper-up > .wrapper_info:nth-child(2) > span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  #collaborations > .container > .wrapper-down {
+      margin-top: 0;
+      padding-bottom: 34px;
+  }
+  
+  #collaborations > .container > .button {
+    margin-top: 48px;
+  }
